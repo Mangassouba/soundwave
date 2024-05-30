@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --dark:#2F303A;
+    --rose:#BC3A80;
+    --blue:#1762A7;
+    --white:#ffffff;
+    --blueClair:#1762A7;
+    --roseClaire:#BC3A80;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+body{
+    background-color: var(--dark);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+header .header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+header .header .menu li{
+    list-style-type: none;
+    margin: 30px;
+}
+header .header .menu li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .container{
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 80%;
+}
+section .container .img{
+    position: relative;
+}
+section .container .img .cercle1{
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    width: 150px;
+}
+section .container .img .cercle2{
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    width: 150px;
+    z-index: -1;
+}
+section .container img{
+    position: absolute;
+    bottom: -590px;
+    width: 410px;
+    z-index: 1px;
+}
+section .container .titre{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+section .container .titre div{
+    position: absolute;
+    right: 30px;
+    top: 120px;
+}
+section .container .titre h4{
+    font-size: 5em;
+    color: var(--white);
+}
+section .container .titre p{
+    color: var(--white);
+    font-size: 15px;
+}
+section .container .titre button{
+    /* width: 200px;
+    height: 100px; */
+    padding: 15px 50px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 20px;
+    cursor: pointer;
+}
+section .container .demi-cercle{
+    position: absolute;
+    right: -145px;
+}
+.header .menu-toggle{
+    display: none;
+}
+
+/* Discover */
+#discover{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#discover .discover{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+.discover .content{
+    width: 60%;
+    
+}
+.discover .content h1{
+    font-size: 3em;
+    color: var(--white);
+}
+.discover .content .para{
+    color: var(--white);
+    font-size: 1.5em;
+    width: 500px;
+    margin-top: 30px;
+    /* text-align: center; */
+}
+.discover .content .icone{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 60%;
+}
+.discover .content .icone .item{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 10px;
+}
+.discover .content .icone .item p{
+    color: var(--white);margin-top: 10px;
+}
+.discover .content .icone .item img{
+    width: 40px;
+}
+.discover .galerie{
+    width:20% ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,150px);
+}
+.discover .galerie img{
+    width: 200px;
+    height: 200px;
+}
+
+#sign-up{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sign-up .sign{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sign-up .sign .titre{
+    width: 50%;
+    font-size: 5em;
+    color: var(--white);
+    font-weight: bold;
+}
+#sign-up .sign .titre span{
+    color: var(--rose);
+}
+#sign-up  .formulaire{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sign-up  .formulaire form{
+    width: 80%;
+    height: 500px;
+    background-color: #000;
+    color: var(--white);
+    padding: 40px 60px;
+    border-radius: 30px;
+}
+#sign-up  .formulaire form .form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+#sign-up  .formulaire form .form input[type="text"],
+input[type="email"],
+input[type="password"]{
+    padding: 20px;
+    background-color: #000;
+    border: 1px solid var(--blueClair);
+    margin-top: 10px;
+}
+#sign-up  .formulaire form .btn{
+    width: 100%;
+}
+#sign-up  .formulaire form .btn button{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 2em;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+footer .footer{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+footer .footer .contact{
+    display: flex;
+}
+footer .footer .contact p{
+    margin: 0 10px;
+}
+footer .footer .sociau{
+    display: flex;
+}
+footer .footer .sociau img{
+    width: 15px;
+    margin: 0 10px;
+}
+@media (max-width:400px)  {
+
+    section .container img{
+        width: 300px;
+    }
+    section .container .titre{
+        width: 100%;
+    }
+    section .container .titre div{
+        width: 100%;
+        position: absolute;
+    }
+    section .container .titre div h4{
+        font-size: 3em;
+    }
+    .discover .content{
+        /* width: 100%; */
+        display: block;
+        
+    }
+    .discover .galerie{
+        display: block;
+        margin-top: 1500px;
+    }
+    .discover .galerie{
+        width: 80%;
+    }
+}
