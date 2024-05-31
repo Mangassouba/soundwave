@@ -27,6 +27,9 @@ header .header{
     justify-content: space-between;
     align-items: center;
 }
+header .header img{
+    width: 400px;
+}
 header .header .menu{
     display: flex;
     justify-content: center;
@@ -187,14 +190,14 @@ section .container .demi-cercle{
 }
 #sign-up .sign{
     width: 80%;
-    height: 800px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #sign-up .sign .titre{
     width: 50%;
-    font-size: 5em;
+    font-size: 4em;
     color: var(--white);
     font-weight: bold;
 }
@@ -208,8 +211,8 @@ section .container .demi-cercle{
     align-items: center;
 }
 #sign-up  .formulaire form{
-    width: 80%;
-    height: 500px;
+    width: 50%;
+    height: 400px;
     background-color: #000;
     color: var(--white);
     padding: 40px 60px;
@@ -223,7 +226,7 @@ section .container .demi-cercle{
 #sign-up  .formulaire form .form input[type="text"],
 input[type="email"],
 input[type="password"]{
-    padding: 20px;
+    padding: 15px;
     background-color: #000;
     border: 1px solid var(--blueClair);
     margin-top: 10px;
@@ -233,9 +236,9 @@ input[type="password"]{
 }
 #sign-up  .formulaire form .btn button{
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     margin-top: 20px;
-    font-size: 2em;
+    font-size: 1.1em;
     background-color: var(--blue);
     color: var(--white);
     cursor: pointer;
@@ -267,7 +270,17 @@ footer .footer .sociau img{
     width: 15px;
     margin: 0 10px;
 }
-@media (max-width:400px)  {
+@media (max-width:900px)  {
+    .header .menu{
+        display: none;
+    }
+    /* body{
+        width: 100%;
+    } */
+    #discover .discover{
+        display: flex;
+        flex-direction: column;
+    }
 
     section .container img{
         width: 300px;
@@ -282,16 +295,61 @@ footer .footer .sociau img{
     section .container .titre div h4{
         font-size: 3em;
     }
+    #discover{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .discover .content h1{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
     .discover .content{
-        /* width: 100%; */
+        width: 90%;
         display: block;
-        
+        text-align: center;
+    }
+    .discover .content .icone{
+        width: 100%;
+    }
+    .discover .content .icone .item{
+        width: 200px;
+    }
+    .discover .content .icone .item img{
+        width: 30px;
+    }
+    .discover .content .para{
+        width: 300px;
+        font-size: 1em;
     }
     .discover .galerie{
         display: block;
-        margin-top: 1500px;
+        /* margin-top: 1500px; */
     }
     .discover .galerie{
         width: 80%;
+        margin-top: 40px;
     }
+    .discover .galerie img{
+        width: 100%;
+    }
+
+    #sign-up .sign{
+        display: flex;
+        flex-direction: column;
+    }
+    #sign-up .sign .titre{
+        width: 100%;
+        text-align: center;
+    }
+    #sign-up .sign .titre p{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    #sign-up .sign .formulaire{
+        width: 100%;
+    }
+
 }
