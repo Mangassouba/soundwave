@@ -270,9 +270,84 @@ footer .footer .sociau img{
     width: 15px;
     margin: 0 10px;
 }
+.menu-toggle{
+    display: none;
+}
 @media (max-width:900px)  {
-    .header .menu{
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .header{
+        display: flex;
+        align-items: center;
+    }
+    header .header img {
+        width: 300px;
+    }
+    header .header .menu{
         display: none;
+    }
+    header .header .menu li a{
+        color: #000;
+    }
+    header .header .menu.responsive{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        color: #000;
+    }
+    header .header .menu-toggle{
+        display: flex;
+        margin: 0 100px;
+        margin-top: 0px;
+        /* margin-top: -20px; */
+        width: 40px;
+        height: 40px;
+    }
+    header .header .menu-toggle::after{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "";
+        height: 2;
+        width: 40px;
+        background-color: #1762A7;
+        box-shadow: 0 10px 0 #1762A7;
+        transform: translateY(10px);
+        border: 2px solid #1762A7;
+        cursor: pointer;
+    }
+    header .header .menu-toggle.active::after{
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 #1762A7;
+    }
+    header .header .menu-toggle::before{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "";
+        height: 2;
+        width: 40px;
+        background-color: #1762A7;
+        border: 2px solid #1762A7;
+        box-shadow: 0 10px 0 #1762A7;
+        transform: translateY(-10px);
+        
+    }
+    header .header .menu-toggle.active::before{
+        transform: translateY(0) rotate(-135deg);
+        box-shadow: 0 0 0 #1762A7;
     }
     /* body{
         width: 100%;
@@ -281,9 +356,26 @@ footer .footer .sociau img{
         display: flex;
         flex-direction: column;
     }
+    section .container .titre button {
+        /* width: 200px;
+        height: 100px; */
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 10px;
+        background-color: var(--blue);
+        color: var(--white);
+        margin-top: 20px;
+        cursor: pointer;
+      }
 
     section .container img{
         width: 300px;
+    }
+    section .container .demi-cercle{
+        display: none;
+    }
+    section .container .img .cercle1{
+        display: none;
     }
     section .container .titre{
         width: 100%;
